@@ -3,7 +3,8 @@
 ### Copy paste this message into your terraform root
 
 ```
-module "namespace" {
-    source  = "edatop/namespace/kubernetes"
+module "kubernetes_namespace" "example" {
+    source = "edatop/namespace/kubernetes"
+    name = "test"
 }
 ```
